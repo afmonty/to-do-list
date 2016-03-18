@@ -1,0 +1,16 @@
+.toDo{
+	height: 5em;
+	width: 20em;
+}
+.input{
+	height: 5em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	clear: both;
+}
+
+.display{
+	background-color: #F3F3F3;
+	height: 25em;
+	width: 35em;
+}
