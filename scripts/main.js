@@ -1,34 +1,37 @@
 
- var todo = document.querySelector( '#todolist' );
- //var input = document.querySelector( 'toDoform' );
- var field = document.getElementById( 'toDoI' );
- var ltoDo = {};
 
+ var list = document.querySelector( '.toDoList' );
+ var inputField = document.getElementById( 'toDoI' );
+ var ltoDo = [];
+ var newList = "";
+ 
 submitbtn.addEventListener( 'click', generateList);
 
   //var genList = 
-  function generateList(){
-  ltoDo = {};
-   if(field in ltoDo){
+function generateList(){
+   if([inputField.value] === ltoDo){
      alert("It is in your list already");
    } else{
-     ltoDo[field.value] = 1;
-    console.log(ltoDo);
+      ltoDo.push(inputField.value);
+      console.log(ltoDo);
+      list.innerHTML += '<li>' + inputField.value + '</li>';
+      render();
      }
-    return ltoDo;
+    return ltoDo; 
 };
 
 
-//console.log(genList());
+function render() {
+    this.[inputField.value] = "";
+    this.list = "";
+     //for (var i = 0; i < ltoDo.length; i++); 
+//     newList.innerHTML = "<li>" + ltoDo[i] + "<li>";
+};
+
+;
 
 
-
-  /*field.innerHTML += '<li>' + text + '</li>';
-    console.log("anna");
-  } else {
-  	console.log("banana");
-  }
- };*/
+  
 
 
 
