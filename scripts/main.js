@@ -1,28 +1,21 @@
 
-
-    
-
-
- //var todo = document.querySelector( '#todolist' );
- var input = document.querySelector( 'toDoform' );
- var field = document.getElementById( '#toDoI' );
+ var todo = document.querySelector( '#todolist' );
+ //var input = document.querySelector( 'toDoform' );
+ var field = document.getElementById( 'toDoI' );
  var ltoDo = {};
-submitbtn.addEventListener( 'submit', generateList);
+
+submitbtn.addEventListener( 'click', generateList);
 
   //var genList = 
   function generateList(){
-  
-  //var lstuff = {};
-  //var stuff = prompt("Gimme stuff");
-  // if(field in ltoDo){
-  //   //alert("It is in your list already");
-  // } else{
-  //   //toDo[input] = 1;
-  //   //alert("this didn't work")
-    ltoDo[field] = 1;
+  ltoDo = {};
+   if(field in ltoDo){
+     alert("It is in your list already");
+   } else{
+     ltoDo[field.value] = 1;
     console.log(ltoDo);
-  //   }
-  // return ltoDo;
+     }
+    return ltoDo;
 };
 
 
